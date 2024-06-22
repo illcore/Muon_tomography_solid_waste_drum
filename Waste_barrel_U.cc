@@ -113,9 +113,7 @@ int main(int argc,char** argv)
   G4cout << "--------------------Simulation ends--------------------" << G4endl;
   G4cout << "-------------------------------------------------------" << G4endl;
   auto end = std::chrono::high_resolution_clock::now();
-
   auto int_s = std::chrono::duration_cast<std::chrono::seconds>(end - start);
-
   std::cout << "The execution time is " << int_s.count() << " seconds." << std::endl;
   delete visManager;
   delete runManager;
