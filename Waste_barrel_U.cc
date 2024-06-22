@@ -81,7 +81,6 @@ int main(int argc,char** argv)
     
   // User action initialization
   runManager->SetUserInitialization(new B1ActionInitialization());
-  
   // Initialize visualization
   //
   G4VisManager* visManager = new G4VisExecutive;
@@ -106,11 +105,13 @@ int main(int argc,char** argv)
     ui->SessionStart();
     delete ui;
   }
-
   // Job termination
   // Free the store: user actions, physics_list and detector_description are
   // owned and deleted by the run manager, so they should not be deleted 
   // in the main() program !
+  G4cout << "-------------------------------------------------------" << G4endl;
+  G4cout << "--------------------Simulation ends--------------------" << G4endl;
+  G4cout << "-------------------------------------------------------" << G4endl;
   auto end = std::chrono::high_resolution_clock::now();
 
   auto int_s = std::chrono::duration_cast<std::chrono::seconds>(end - start);

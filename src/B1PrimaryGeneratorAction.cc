@@ -44,7 +44,6 @@ using namespace std;
 B1PrimaryGeneratorAction::B1PrimaryGeneratorAction()
 : G4VUserPrimaryGeneratorAction(),
   fParticleGun(0)
-//  fEnvelopeBox(0)
 {
   G4int n_particle = 1;
   fParticleGun  = new G4ParticleGun(n_particle);
@@ -69,7 +68,7 @@ B1PrimaryGeneratorAction::~B1PrimaryGeneratorAction()
 
 void B1PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
 {
-  for (int n_particle = 1; n_particle < 100000; n_particle++){
+  for (int n_particle = 1; n_particle < 1000; n_particle++){
   G4double y0 = 85*cm;
   G4double z0 = 0.5*cm;
   G4double x0 = 0.5*cm; 
