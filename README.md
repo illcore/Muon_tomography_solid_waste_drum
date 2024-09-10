@@ -4,5 +4,5 @@ References: https://iopscience.iop.org/article/10.1088/1748-0221/17/12/P12005/me
 * Muon tracking at each detector layer.
 * Recording negative muon captures within the drum components including the steel layer, the concrete filling, and the solid uranium box.
 * Uniform energy distribution between 0.1 and 8 GeV;
-* One is suppsoed to use the executable+run1.mac without any change to employ the GEANT4 package appropriately;
+* One is supposed to use the executable+run1.mac without any change to employ the GEANT4 package appropriately;
 * If/when necessary, one is supposed to remove/close the visualization macro (vis.mac) in run1.mac to prevent any possible computer crash.
